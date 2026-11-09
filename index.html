@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Студент 2 курсу">
+    <meta name="Description" content="Лабораторна робота №8: Canvas та JavaScript">
+    <title>Лабораторна робота №8</title>
+    <style>
+        body {
+            background-color: #cccccc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        canvas {
+            border: 1px dashed red;
+            background-color: #ffffff;
+            cursor: crosshair;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .btn:hover { background: #45a049; }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>Лабораторна робота №8. Побудова растрової графіки</h3>
+
+    <canvas id="drawingCanvas" width="800" height="500">
+        Браузер не підтримує тег canvas[cite: 4].
+    </canvas>
+
+    <br>
+    <div class="btn" onclick="Add_Figure_Draw()">Додати фігуру</div>
+</body>
+</html>
